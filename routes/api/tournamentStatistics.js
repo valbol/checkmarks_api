@@ -20,9 +20,9 @@ router.post(
     ],
     saveTournamentResults
 );
-router.get('/getResults/:tid', [], getTournamentResults);
-router.get('/fetchSuccessPerQuestion/:tid', [], fetchSuccessPerQuestion);
-router.get('/fetchUsersScores/:tid', [], fetchUsersScores);
-router.get('/fetchTournamentStatistics/:tid', [], fetchTournamentStatistics);
+router.get('/getResults/:tid', getTournamentResults);
+router.get('/fetchSuccessPerQuestion/:tid', fetchSuccessPerQuestion);
+router.get('/fetchUsersScores/:tid', fetchUsersScores);
+router.get('/fetchTournamentStatistics/:tid', fetchTournamentStatistics);
 
 module.exports = router;
